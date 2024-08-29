@@ -1,5 +1,38 @@
-$bgColor: red;
+@use 'variaveis';
+@use 'menu-top';
+@use 'description';
+@use 'details-menu';
+@use 'footer';
 
-body{
-    background-color: $bgColor;
+@font-face {
+    font-family: Avenir Regular;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir Bold;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+.logo {
+    width: 84px;
+}
+
+.about-content {
+    width: 100%;
+    background-color: variaveis.$corDeFundo;
+    padding: 72px calc(3.5vw + 24px) 112px;
 }
